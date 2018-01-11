@@ -23,7 +23,7 @@
         <td><%= bookmark.venue.name %></td>
         <td><%= bookmark.user.email %></td>
         <td><%= bookmark.notes %></td>
-        <td><%= bookmark.image %></td>
+        <td><img src='<%= bookmark.image %>' class='img-responsive'></td>
         <td>
           <a href="/bookmarks/<%= bookmark.id %>" class="btn btn-primary">Show</a>
           <a href="/bookmarks/<%= bookmark.id %>/edit" class="btn btn-warning">Edit</a>
